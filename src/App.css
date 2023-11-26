@@ -2,37 +2,57 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-container {
+  margin-top: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 14px; /* Adjust the font size as needed */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  border-radius: 0 15px 15px 0;
+  padding: 6px;
+  cursor: pointer;
+  background-color: gold;
+  
+}
+
+button img {
+  width: 20px; /* Adjust the width of the search icon as needed */
+}
+
+.countries {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 80px;
+}
+
+.country {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+.country img{
+  width:100%;
+  max-width:100%;
+  height:auto;
+}
+.country-name{
+  font-size: 15px;
+}
+.bold-text{
+  font-weight: bold;
 }
